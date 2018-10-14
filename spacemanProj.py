@@ -19,7 +19,7 @@ def load_word():
 
   words_list = words_list[0].split(' ')
   secret_word = random.choice(words_list)
-  print("The secret word is " + secret_word)
+  # print("The secret word is " + secret_word)
   return secret_word
 
 
@@ -195,6 +195,7 @@ def spaceman(secret_word):
       get_guessed_word(secret_word, right_guess)
     get_available_letters(all_guess)
     print("All guesses: ", all_guess)
+    print("the secret word is: {}".format(secret_word))
 
 
 
